@@ -13,6 +13,7 @@ public class rightAngledTriangle
                 System.out.print(" * ");
             }
             System.out.println();
+            s.close();
         }
     }
 }

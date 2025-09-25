@@ -1,7 +1,13 @@
 public class ex {
+     void print(int x,int y,int z){
+    
+     System.out.println(x+y+z);
+    }
     public static void main(String[] args) {
-       //int[] arr= new int[5];
-       int x=5;
-       System.out.println(x++);
+        ex ob = new ex();
+       // System.out.println("hello");
+       ob.print(10,20,8);
+
+       
     }
 }
