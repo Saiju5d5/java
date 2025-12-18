@@ -4,7 +4,7 @@ public static void main(String[] args) {
 Scanner s = new Scanner(System.in);
 System.out.print("Enter the value of choice : ");
 int choice = s.nextInt();  
-switch (choice){  
+switch(choice){  
 case 0:  
 System.out.println("SUNDAY");  
 break;  

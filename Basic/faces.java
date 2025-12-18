@@ -7,20 +7,20 @@ public class faces {
         int n = s.nextInt();
         switch (n) {
             case 1:
-                n = 7 - n;
-                System.out.println(n);
-                break;
+            n = 7 - n;
+            System.out.println(n);
+            break;
             case 2:
-                n = 7 - n;
-                System.out.println(n);
-                break;
+            n = 7 - n;
+            System.out.println(n);
+            break;
             case 3:
-                n = 7 - n;
-                System.out.println(n);
-                break;
+            n = 7 - n;
+            System.out.println(n);
+            break;
             default:
-                System.out.println("Invalid Number");
-                break;
+            System.out.println("Invalid Number");
+            break;
         }
     }
 }

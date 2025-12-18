@@ -1,5 +1,4 @@
-import java.util.Scanner;
-
+import java.util.*;
 public class ArmstrongAnyDigit {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -8,7 +7,7 @@ public class ArmstrongAnyDigit {
         int num = sc.nextInt();
         int originalNum = num;
         int digits = 0;
-
+        
         int temp = num;
         while (temp != 0) {
             digits++;
@@ -18,15 +17,21 @@ public class ArmstrongAnyDigit {
         temp = num;
         while (temp != 0) {
             int digit = temp % 10;
-            sum += Math.pow(digit, digits);
+            //sum += Math.pow(digit, digits);
+            int power = 1;
+            for (int i = 1; i <= digits; i++) {
+                power *= digit;
+            }
+            sum += power;
             temp /= 10;
         }
+        System.out.println("sum : "+sum);
         if (sum == originalNum) {
             System.out.println(originalNum + " is an Armstrong number.");
         } else {
             System.out.println(originalNum + " is NOT an Armstrong number.");
+            sc.close();
         }
 
-        sc.close();
     }
 }

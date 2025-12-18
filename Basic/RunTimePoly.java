@@ -1,4 +1,4 @@
-class A{
+class Run{
     void print(){
         System.out.println("We are in print method of class A");
     }
@@ -6,7 +6,7 @@ class A{
         System.out.println("We are in show method of class A");
     }
 }
-class B extends A{
+class Time extends Run{
     @Override
     void print(){
         System.out.println("We are in print method of class B");
@@ -19,9 +19,9 @@ class B extends A{
 }
 public class RunTimePoly {
     public static void main(String args[]) {
-        A sc = new B();
-        //sc.print();
-        //sc.show();
+        Run sc = new Time();
+        sc.print();
+        sc.show();
     }
     
 }

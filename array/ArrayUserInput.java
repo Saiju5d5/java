@@ -21,8 +21,8 @@ public class ArrayUserInput {
         System.out.println("You entered:");
         for (int i = 0; i < size; i++) {
             System.out.print(arr[i] + " ");
+            sc.close();
         }
 
-        sc.close();
     }
 }
